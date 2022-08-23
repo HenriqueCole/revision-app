@@ -62,6 +62,9 @@ async function registerBook(
       situation: "Some author is not registered",
     };
   }
+
+  const book = await crud.post(tableName, undefined, data);
+  return book;
 }
 
 async function checkListRegisteredAuthors(list = []) {

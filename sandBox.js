@@ -25,7 +25,7 @@ async function execute() {
   const book = {
     title: "The Lord of the Rings",
     qtyPages: 8,
-    arrayAuthors: ["J.R.R. Tolkien", "J.R.R. Tolkien"],
+    arrayAuthors: ["SG0AJdQdByg0me3oQly4", "araIKklkc6aqa72bugo3"],
   };
   const result = await bookHandler.registerBook(book);
   console.log("RESULT: ", result);
