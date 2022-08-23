@@ -71,7 +71,7 @@ async function getById(tableName, id) {
   if (docSnap.exists()) {
     return docSnap.data();
   } else {
-    return new Error("Not found");
+    throw new Error("Not found");
   }
 }
 
